@@ -119,4 +119,9 @@ public class NotificationService {
             notification.setStatus(NotificationStatus.FAILED);
         }
     }
+
+    public NotificationPreference getPreferenceByUserId(UUID userId) {
+
+        return preferenceService.getByUserId(userId);
+    }
 }
